@@ -33,15 +33,14 @@ public class SampleTest {
   public void sampleTest() {
    
    MobileElement el3 = (MobileElement) driver.findElementById("ru.netology.testing.uiautomator:id/userInput");
-el3.sendKeys("  ");
+   el3.sendKeys("  ");
    MobileElement el4 = (MobileElement) driver.findElementById("ru.netology.testing.uiautomator:id/buttonChange");
-el4.click();
-     Assertions.assertEquals("Hello UiAutomator!", ru.netology.testing.uiautomator:id/textToBeChanged.getText());
+   el4.click();
+   Assertions.assertEquals("Hello UiAutomator!", ru.netology.testing.uiautomator:id/textToBeChanged.getText());
    MobileElement el5 = (MobileElement) driver.findElementById("ru.netology.testing.uiautomator:id/userInput");
-el5.sendKeys("  Hello, my friend!");
-MobileElement el6 = (MobileElement) driver.findElementById("ru.netology.testing.uiautomator:id/buttonActivity");
-el6.click();
- 
+   el5.sendKeys("  Hello, my friend!");
+   MobileElement el6 = (MobileElement) driver.findElementById("ru.netology.testing.uiautomator:id/buttonActivity");
+   el6.click();
    Assertions.assertEquals("Hello, my friend!", ru.netology.testing.uiautomator:id/text.getText()); 
  
   }
